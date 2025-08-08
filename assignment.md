@@ -15,7 +15,8 @@ Question: How do you create a 2x2 subplot grid in matplotlib and select the firs
 Answer:
 
 ```python
-fig, ax = plt.subplots(2, 2, 1)
+fig, axes = plt.subplots(2, 2)
+ax = axes[0, 0]  # Select first subplot (top-left)
 ```
 
 ### Question 2
@@ -30,7 +31,7 @@ y = [1, 4, 9, 16]
 Answer:
 
 ```python
-plt.plot(x, y, 'ro--')
+plt.plot(x, y, 'r--')
 ```
 
 ### Question 3
